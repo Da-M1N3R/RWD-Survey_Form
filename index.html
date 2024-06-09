@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Marine Survey Form</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <!-- Part 0 -->
+    <h1 id='title'>Marine Survey Form</h1>
+    <p id='description'>Thank you for you service soldier. It is you that make this world safe.</p>
+
+    <form id='survey-form'>
+      <!-- Part 1 -->
+      <fieldset>
+        <label for='name' id='name-label'>1) Name: 
+          <input id='name' type='text' placeholder='Enter your name' required>
+        </label>
+        <label for='email' id='email-label'>2) Email: 
+          <input id='email' type='email' placeholder='Enter your email' required>
+        </label>
+        <label for='number' id='number-label'>3) Number: 
+          <input id='number' type='number' min='0' max='99' placeholder='Enter your number'>
+        </label>
+        <label for='age-label'>4) Age: 
+          <input id='age' type='number' min='15' placeholder='Enter your age'>
+        </label>
+      </fieldset>
+
+      <!-- Part 2 -->
+      <fieldset>
+        <legend>5) Gender: </legend>
+        <label>
+          <input id='gender' name='gender' type='radio' value='1' checked> Male &nbsp;
+          <input id='gender' name='gender' type='radio' value='2'> Female &nbsp;
+          <input id='gender' name='gender' type='radio' value='3'> Others &nbsp;
+        </label>
+      </fieldset>
+
+      <!-- Part 3 -->
+      <legend id='color'>6) Color:</legend>
+      <select id='dropdown'>
+        <option value=''>(select one)</option>
+        <option value='1'>Red</option>
+        <option value='2'>Green</option>
+        <option value='3'>Blue</option>
+        <option value='4'>Light</option>
+        <option value='5'>Dark</option>
+      </select>
+
+        <label>7) What do you want to improve on?<br>
+          <input id="skill" type='checkbox' value='haki'>Haki<br>
+          <input id="skill" type='checkbox' value='df'>DF<br>
+          <input id="skill" type='checkbox' value='rokushiki'>Rokushiki<br>
+        </label>
+
+      <label for='referrer'>8) How did you hear about us? 
+        <select id='referrer' name='referrer'>
+          <option value=''>(select one)</option>
+          <option value='1'>Family</option>
+          <option value='2'>Friends</option>
+          <option value='3'>School</option>
+          <option value='4'>Social Media</option>
+          <option value='5'>Newspaper</option>
+        </select>
+      </label>
+
+      <!-- Part 4 -->
+      <label for='questions'>9) Do you have any questions?<br>
+        <textarea id='question' name='question' rows='5' cols='50' placeholder='Type in your questions...'></textarea>
+      </label>
+
+      <!-- Part 5 -->
+      <input id='submit' type='submit' value='Submit'>
+    </form>
+  </body>
+</html>
